@@ -1,0 +1,7 @@
+timestamp,ip_address,method,endpoint,http_version,status_code,response_size,response_time_ms,user_agent,department,user_id
+2025-01-06 08:15:23,192.168.31.45,POST,/prg/swm/web_syslog_main_select.php,HTTP/1.1,200,1847,234,Mozilla/5.0,Engineering,user_1001
+2025-01-06 08:18:34,203.45.12.89,POST,/pc/html/member/do_login.html,HTTP/1.1,401,234,45,python-requests/2.28.0,Unknown,anonymous
+2025-01-06 08:18:35,203.45.12.89,POST,/pc/html/member/do_login.html,HTTP/1.1,401,234,42,python-requests/2.28.0,Unknown,anonymous
+2025-01-06 08:27:45,192.168.31.233,POST,/prg/swm/web_syslog_main_select.php,HTTP/1.1,500,0,3456,Mozilla/5.0,Marketing,user_5012
+2025-01-06 08:31:23,203.45.12.89,GET,/admin/,HTTP/1.1,403,456,12,sqlmap/1.6.12,Unknown,anonymous
+2025-01-06 08:34:23,192.168.31.201,POST,/prg/swm/web_syslog_data_select.php,HTTP/1.1,503,0,5234,Mozilla/5.0,IT,admin_001

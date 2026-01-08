@@ -1,0 +1,6 @@
+langchain-groq
+gradio
+plotly
+pandas
+numpy==2.4.0
+streamlit

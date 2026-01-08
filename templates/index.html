@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo Chatbot</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem; }
+      #chat { border: 1px solid #ddd; padding: 1rem; height: 300px; overflow: auto; }
+      .user { color: blue; }
+      .bot { color: green; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <h1>Demo Chatbot</h1>
+    <div id="chat"></div>
+    <input id="msg" type="text" style="width:80%" placeholder="Ask a question..." />
+    <button id="send">Send</button>
+
+    <script>
+      const chat = document.getElementById('chat')
+      const msg = document.getElementById('msg')
+      const send = document.getElementById('send')
+
+      function append(cls, text) {
+        const el = document.createElement('div')
+        el.className = cls
+        el.textContent = text
+        chat.appendChild(el)
+        chat.scrollTop = chat.scrollHeight
+      }
+
+      send.onclick = async () => {
+        const text = msg.value.trim()
+        if (!text) return
+        append('user', 'You: ' + text)
+        msg.value = ''
+        const res = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: text }) })
+        const data = await res.json()
+        append('bot', 'Bot: ' + (data.reply || data.error))
+      }
+
+      msg.addEventListener('keydown', (e) => { if (e.key === 'Enter') send.click() })
+    </script>
+  </body>
+</html>

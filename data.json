@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "text": "Welcome to Acme Corp. We sell high-quality widgets and provide 24/7 customer support. Our return policy is 30 days with receipt."
+  },
+  {
+    "id": 2,
+    "text": "Shipping usually takes 3-5 business days for domestic orders. Expedited shipping options are available at checkout."
+  },
+  {
+    "id": 3,
+    "text": "To reset your password, click 'Forgot password' on the login page and follow the emailed instructions. For additional help, contact support@acme.example."
+  },
+  {
+    "id": 4,
+    "text": "Our pricing tiers include Basic, Pro, and Enterprise. Volume discounts are available for orders over 100 units."
+  },
+  {
+    "id": 5,
+    "text": "You can track your order using the tracking number sent to your email after shipment. If tracking is unavailable, contact customer support."
+  }
+]

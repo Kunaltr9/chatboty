@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-black text-white font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+}
+
+a {
+    @apply text-purple-400 hover:text-purple-300;
+}
+
+button {
+    @apply bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105;
+}
+
+button:hover {
+    @apply shadow-lg;
+}
+
+.card {
+    @apply bg-gray-800 rounded-lg p-4 shadow-md transition-transform duration-300;
+}
+
+.card:hover {
+    @apply transform scale-105;
+}
+
+.input {
+    @apply bg-gray-700 text-white border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-purple-500;
+}
+
+.textarea {
+    @apply bg-gray-700 text-white border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-purple-500;
+}
+
+.footer {
+    @apply bg-gray-900 text-gray-400 p-4 text-center;
+}
+
+.sidebar {
+    @apply bg-gray-800 text-white p-4 rounded-lg shadow-md;
+}
+
+.header {
+    @apply bg-gray-900 text-white p-4 sticky top-0 z-10;
+}
+
+.chat-panel {
+    @apply bg-gray-800 p-4 rounded-lg shadow-md;
+}

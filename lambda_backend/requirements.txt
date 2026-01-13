@@ -1,0 +1,14 @@
+# Lambda Backend Dependencies
+# Minimal, Lambda-safe packages only
+
+# Database client for MariaDB/MySQL
+PyMySQL==1.1.0
+
+# Note: boto3 is pre-installed in Lambda runtime
+# If you need AWS Secrets Manager, boto3 is already available
+
+# Optional: For advanced timestamp parsing (if needed)
+# python-dateutil==2.8.2
+
+# Optional: For IP address validation (if needed)
+# ipaddress is in Python standard library (Python 3.3+)

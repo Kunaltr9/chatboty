@@ -1,0 +1,7 @@
+/* Minimal styles to make the chatbot visible */
+html,body,#root{height:100%;margin:0;background:#0b1020;color:#e6eef8;font-family:Inter, system-ui, Arial}
+.fixed{position:fixed}
+.bottom-6{bottom:1.5rem}.right-6{right:1.5rem}
+.h-14{height:3.5rem}.w-14{width:3.5rem}.rounded-full{border-radius:9999px}
+.bg-primary{background:#0ea5a4}.text-primary-foreground{color:white}
+.shadow-lg{box-shadow:0 10px 25px rgba(2,6,23,0.6)}

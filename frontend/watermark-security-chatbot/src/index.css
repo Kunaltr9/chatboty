@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0a; /* Deep black background */
+    color: #ffffff; /* White text for contrast */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; /* Bold typography */
+}
+
+a {
+    color: #8a3ffc; /* Purple-blue gradient accent */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header, .footer {
+    background: linear-gradient(90deg, rgba(138, 63, 252, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar {
+    background-color: #1a1a1a; /* Darker sidebar */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.chat-panel {
+    background-color: #1a1a1a; /* Darker chat panel */
+    padding: 15px;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 500px; /* Limit height for scrolling */
+}
+
+.button {
+    background-color: #8a3ffc; /* Purple-blue button */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #6f2cbb; /* Darker shade on hover */
+}
+
+.card {
+    background-color: #2a2a2a; /* Card background */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    font-weight: bold;
+    color: #8a3ffc; /* Accent color for card header */
+}
+
+.card-content {
+    color: #e0e0e0; /* Lighter text for card content */
+}
+
+.input {
+    background-color: #1a1a1a; /* Dark input field */
+    color: #ffffff;
+    border: 1px solid #8a3ffc; /* Accent border */
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #6f2cbb; /* Darker border on focus */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header, .footer, .sidebar, .chat-panel {
+        padding: 10px;
+    }
+}
